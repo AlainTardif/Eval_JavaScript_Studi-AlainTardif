@@ -1,21 +1,38 @@
 # eval_studi_javascript
 
-Règle du jeu des dés
+## Objectif
 
-Le jeu des dés est un jeu de hasard à deux joueurs où chaque joueur lance un dé pour accumuler des points. Au début de chaque tour, le joueur a son score ROUND initialisé à 0 et peut lancer le dé autant de fois qu'il le souhaite. Le résultat d'un lancer est ajouté au score ROUND du joueur.
+Création d'un petit jeu sur navigateur web à l'aide du DOM.
 
-Lors de son tour, le joueur peut décider à tout moment de "garder" ses points et de les ajouter à son score global (GLOBAL), en cliquant sur l'option "Garder", ou de continuer à lancer le dé pour accumuler plus de points. Si le joueur obtient un 1 lors de son lancer, il perd tous les points accumulés pendant son tour en cours et passe la main à l'autre joueur.
+## Livrables attendus
 
-Le jeu se poursuit jusqu'à ce qu'un joueur atteigne ou dépasse 100 points sur son score GLOBAL. Le joueur qui atteint cette marque remporte la partie.
+1. Un jeu fonctionnel
+2. Une interface lisible qui correspond à la maquette fournie
 
-Comment jouer ?
+## Fonctionnalités globales
 
-Pour jouer au jeu des dés, ouvrez simplement le fichier index.html dans un navigateur web. Le jeu est entièrement implémenté en JavaScript et ne nécessite pas de serveur web. Le jeu est joué à deux joueurs, qui jouent tour à tour. Le joueur 1 commence en premier. Pour lancer le dé, cliquez sur le bouton "Lancer le dé". Le chiffre obtenu sera affiché sur le dé, ainsi que le score du joueur pour le tour en cours. Le joueur peut choisir de lancer le dé à nouveau pour essayer d'obtenir plus de points, ou de "tenir" ses points et de passer la main au joueur suivant. Si un joueur obtient un 1 sur le dé, son score pour le tour en cours est perdu et la main passe automatiquement au joueur suivant. Si un joueur atteint ou dépasse un score de 100 points, il remporte la partie. Le bouton "Nouvelle partie" permet de réinitialiser le jeu et de commencer une nouvelle partie.
+## Côté client front-end
 
-Personnalisation du jeu :
+- Créer une nouvelle partie
+- Retenir le score courant
+- Lancer le dé
+- Gérer 2 joueurs
 
-Le code JavaScript du jeu est contenu dans le fichier script.js. Si vous êtes familier avec le JavaScript et l'HTML, vous pouvez modifier le jeu pour ajouter de nouvelles fonctionnalités ou pour changer les règles du jeu. Le jeu utilise également des styles CSS pour la mise en page. Les styles sont définis dans les fichiers   style.css, box-center.css et player.css. Vous pouvez modifier les styles pour personnaliser l'apparence du jeu.
+## Règles du jeu
 
-J'espère que vous apprécierez de jouer au jeu des dés !
+Le jeu se joue avec 2 joueurs sur un seul écran. Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL).
+
+Déroulement d'un tour
+
+1. Le joueur a son ROUND initialisé à 0
+2. Le joueur peut lancer le dé autant de fois qu'il le souhaite, avec le résultat de chaque lancer ajouté à son ROUND
+3. Le joueur peut décider à tout moment de :
+    - Cliquer sur l'option "Hold", ce qui envoie les points du ROUND vers le GLOBAL et passe le tour à l'autre joueur
+    - Lancer le dé ; s'il obtient un 1, son score ROUND est perdu et c'est la fin de son tour
+Le premier joueur qui atteint 100 points sur GLOBAL gagne le jeu.
+
+## Contexte du projet
+
+Le but est de développer un jeu simple et amusant pour les navigateurs web, en utilisant les compétences acquises sur la manipulation du DOM. Le jeu doit être accessible et intuitif, permettant aux utilisateurs de s'amuser rapidement sans avoir besoin d'apprendre des règles compliquées
 
 Alain Tardif
