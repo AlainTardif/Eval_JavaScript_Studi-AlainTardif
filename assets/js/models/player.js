@@ -152,7 +152,7 @@ export class Player {
 
     
     // @returns { void } - Rien
-    // Permet au jour de passer la main au second joueur 
+    // Permet au joueur de passer la main au second joueur 
      
     hold() {
         // on stock le score global

@@ -22,7 +22,7 @@
   
   .popup {
     position: fixed;
-    font-family: consolas sans-serif;
+    font-family: 'Lato', sans-serif;
     left: 50%;
     transform: translate(-50%);
     width: 90%;
