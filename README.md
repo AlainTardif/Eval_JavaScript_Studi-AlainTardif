@@ -11,7 +11,7 @@ Création d'un petit jeu sur navigateur web à l'aide du DOM.
 
 ## Fonctionnalités globales
 
-## Côté client front-end
+Côté client front-end
 
 - Créer une nouvelle partie
 - Retenir le score courant
