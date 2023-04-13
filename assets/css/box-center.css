@@ -1,0 +1,121 @@
+.box-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newGame {
+    font-family: consolas sans-serif;
+    background-color: #fff;
+    padding: 10px;
+    color: #e74c3c;
+    border-radius: 10px;
+    border: 1px solid #e74c3c;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Style pour le survol du bouton "NOUVEAU JEU" */
+.newGame:hover {
+    background-color: #e74c3c;
+    color: #000;
+    font-size: 18px;
+    outline: none;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.imgCenter img {
+    width: 75px;
+    height: 75px;
+}
+
+/* Style pour le bouton "LANCER LES DÉS" */
+.rollDice {
+    font-family: consolas sans-serif;
+    background-color: #fff;
+    padding: 10px;
+    color: #e74c3c;
+    border-radius: 10px;
+    border: 1px solid #e74c3c;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+/* Style pour le survol du bouton "LANCER LES DÉS" */
+.rollDice:hover {
+    background-color: #e74c3c;
+    color: #000;
+    font-size: 18px;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* Style pour le bouton "GARDER" */
+.hold {
+    font-family: consolas sans-serif;
+    font-size: 19px;
+    background-color: #fff;
+    padding: 10px;
+    color: #e74c3c;
+    border-radius: 10px;
+    border: 1px solid #e74c3c;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Style pour le survol du bouton "GARDER" */
+.hold:hover {
+    background-color: #e74c3c;
+    color: #000;
+    font-size: 18px;
+    outline: none;
+    transition: 0.2s;
+}
+  
+
+@media screen and (max-width: 768px) {
+    .box-center {
+        width: 95%;
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 5px;
+    }
+
+    .hold, .rollDice, .newGame {
+        font-size: 0.7rem;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .hold:hover, .rollDice:hover, .newGame:hover {
+        font-size: 0.7rem;
+    }
+
+
+    .imgCenter img {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 34px;
+        height: 34px;
+    }
+}
